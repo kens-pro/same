@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>“いっしょ”が育む“できた！”の芽｜トリイミュージック 大津わにセンター</title>
+<meta name="description" content="子育て、毎日おつかれさまです。イヤイヤ期、どう接したら？そんなお悩みも音楽で解決！“いっしょ”を大切にするヤマハの「セイムの法則」で、親子の時間を笑顔に。1〜3歳向けドレミぱーく、3歳〜年少向けヤマハ音楽教室のご案内。" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+/* === 基本設定 === */
+:root {
+  --bg-main: #FFFBF7;
+  --bg-content: #FFFFFF;
+  --text-main: #5C4B40;
+  --text-lead: #7D6B60;
+  --color-primary: #FF8F8F;
+  --color-primary-light: #FFEAE4;
+  --color-accent: #FFC974;
+  --color-yamaha: #5B89EB;
+  --radius-m: 12px;
+  --radius-l: 24px;
+  --shadow: 0 8px 24px rgba(183, 162, 150, 0.15);
+  --font-body: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+  --font-sign: 'Dancing Script', cursive;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.8;
+  font-size: 16px;
+  word-break: break-all;
+}
+
+img { max-width: 100%; height: auto; vertical-align: middle; }
+a { color: var(--color-yamaha); text-decoration: none; }
+a:hover { opacity: 0.8; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section { padding: 80px 0; }
+@media (max-width: 768px) {
+  .section { padding: 60px 0; }
+}
+
+/* === ヘッダー & ヒーロー === */
+.hero {
+  background: linear-gradient(180deg, #FFF6F0 0%, #FFFFFF 100%);
+  padding: 40px 0;
+  text-align: center;
+  overflow: hidden;
+}
+.hero-tag {
+  display: inline-block;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.hero-title {
+  font-size: clamp(28px, 6vw, 42px);
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 16px 0;
+  color: #4A3A30;
+}
+.hero-title .highlight { color: var(--color-primary); }
+.hero-lead {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-lead);
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.img-placeholder {
+  background-color: #EFEFEF;
+  border-radius: var(--radius-l);
+  width: 100%;
+  height: 400px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #B0A096;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+}
+@media (max-width: 768px) {
+  .img-placeholder { height: 280px; }
+}
+
+/* === CTAボタン === */
+.btn {
+  display: inline-block;
+  padding: 16px 24px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+.btn-primary {
+  background: linear-gradient(45deg, var(--color-primary), #FFB09C);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 143, 143, 0.4);
+}
+.btn-primary:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 6px 16px rgba(255, 143, 143, 0.5); }
+.btn-secondary {
+  background-color: #fff;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary-light);
+}
+.btn-secondary:hover { background-color: var(--color-primary-light); }
+
+/* === セクション見出し === */
+.section-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-title h2 {
+  font-size: clamp(24px, 5vw, 32px);
+  font-weight: 800;
+  margin: 0 0 8px;
+  position: relative;
+  display: inline-block;
+}
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 8px;
+  background-color: var(--color-accent);
+  opacity: 0.5;
+  border-radius: 4px;
+  z-index: -1;
+}
+.section-title p {
+  color: var(--text-lead);
+  font-size: 16px;
+  margin: 0;
+}
+
+/* === 汎用レイアウト & カード === */
+.grid { display: grid; gap: 32px; }
+@media (min-width: 961px) {
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 960px) and (min-width: 601px) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+.align-center { align-items: center; }
+.card {
+  background-color: var(--bg-content);
+  border-radius: var(--radius-l);
+  padding: 32px;
+  box-shadow: var(--shadow);
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .card { padding: 24px; }
+}
+
+/* === 特徴・説明セクション === */
+.feature-card { text-align: center; padding: 32px 24px; }
+.feature-icon { font-size: 48px; line-height: 1; color: var(--color-accent); margin-bottom: 16px; }
+.feature-card h3 { font-size: 20px; margin: 0 0 8px; font-weight: 800; }
+.feature-card p { margin: 0; color: var(--text-lead); font-size: 15px; }
+.content-box { background-color: #fff; border-radius: var(--radius-l); padding: 40px; box-shadow: var(--shadow); }
+@media (max-width: 768px) {
+  .content-box { padding: 24px; }
+}
+.content-box h3 { font-size: 22px; color: var(--color-primary); margin: 0 0 16px; font-weight: 800; }
+.img-placeholder-small { background-color: #EFEFEF; border-radius: var(--radius-m); width: 100%; height: 200px; margin-top: 24px; display: flex; align-items: center; justify-content: center; color: #B0A096; }
+.quote-box { background-color: var(--bg-main); border-left: 5px solid var(--color-accent); padding: 20px; border-radius: 0 var(--radius-m) var(--radius-m) 0; margin: 24px 0; }
+.alert{background:#fff7f7;border:1px solid #ffd7d7;border-radius:12px;padding:14px 16px;color:#7a2f2f;margin-top:24px}
+.alert strong{color:#5a0f0f}
+
+/* === 3ステップカード === */
+.step-card { text-align: center; padding: 24px; position: relative; }
+.step-icon { font-size: 40px; line-height: 1; color: var(--color-primary); margin-bottom: 16px; }
+.step-card h3 { font-size: 20px; font-weight: 800; margin: 0 0 12px; }
+.step-card h3 small { display: block; font-size: 14px; color: var(--color-primary); font-weight: 700; margin-top: 4px; }
+.step-card .step-num { display: block; font-size: 14px; font-weight: 700; color: var(--text-lead); margin-bottom: 8px; }
+.step-card ul { list-style: none; padding: 0; margin: 0; color: var(--text-lead); font-size: 15px; text-align: left; }
+.step-card ul li { margin-bottom: 6px; padding-left: 1.2em; text-indent: -1.2em; }
+.step-card ul li::before { content: '・'; margin-right: 0.4em; }
+
+/* === コース紹介 === */
+.course-card h3 { font-size: 22px; font-weight: 800; margin: 0 0 16px; color: var(--color-primary); }
+.course-tag { display: inline-block; font-size: 14px; font-weight: 700; padding: 4px 12px; border-radius: 999px; background-color: var(--color-accent); color: #fff; margin-bottom: 8px; }
+.checklist { list-style: none; padding: 0; margin: 24px 0; }
+.checklist li { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.checklist li::before { content: '✔'; color: var(--color-primary); font-weight: 700; font-size: 18px; }
+.course-buttons { margin-top: 24px; display: grid; gap: 12px; }
+.btn-tel { background-color: #fff; color: var(--color-yamaha); border: 2px solid var(--color-yamaha); }
+
+/* === FAQ === */
+details { background: var(--bg-content); border-radius: var(--radius-m); border: 1px solid #F3EAE4; margin-bottom: 12px; transition: box-shadow 0.3s; }
+details[open] { box-shadow: var(--shadow); }
+summary { padding: 20px; cursor: pointer; font-weight: 700; display: flex; justify-content: space-between; align-items: center; }
+summary::after { content: '+'; font-size: 24px; color: var(--color-primary); transition: transform 0.3s; }
+details[open] summary::after { content: '−'; transform: rotate(180deg); }
+.faq-answer { padding: 0 20px 20px; color: var(--text-lead); border-top: 1px dashed #F3EAE4; margin: 0 20px; }
+
+/* === アクセス === */
+.access-map { position: relative; aspect-ratio: 16 / 10; border-radius: var(--radius-m); overflow: hidden; background-color: #EFEFEF; box-shadow: var(--shadow); }
+.access-map iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+.access-info { list-style: none; padding: 0; margin: 24px 0 0; }
+.access-info li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.access-info-icon { width: 24px; height: 24px; color: var(--color-primary); flex-shrink: 0; margin-top: 2px; }
+
+/* === フッター === */
+.footer { background-color: #F8F1EB; padding: 40px 0 120px; text-align: center; color: var(--text-lead); font-size: 14px; }
+.footer-sign { font-family: var(--font-sign); font-size: 32px; color: var(--text-main); margin: 8px 0 4px; }
+.footer-sign small { display: block; font-family: var(--font-body); font-size: 12px; letter-spacing: 0.05em; color: var(--text-lead); }
+
+/* === フローティングCTA === */
+.sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 12px; box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05); z-index: 100; display: none; }
+@media (max-width: 768px) { .sticky-cta { display: block; } }
+.sticky-cta .container { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.sticky-cta .btn { width: 100%; padding: 12px; font-size: 14px; }
+.float-line-pc { position: fixed; right: 24px; bottom: 24px; z-index: 99; display: none; }
+@media (min-width: 769px) { .float-line-pc { display: block; } }
+.float-line-pc .btn-primary { padding: 18px 28px; font-size: 18px; }
+</style>
+</head>
+<body>
+
+<!-- === ヘッダー & ヒーロー === -->
+<header class="hero">
+  <div class="container">
+    <p class="hero-tag">ヤマハ音楽教室 1歳〜年少さん向け</p>
+    <h1 class="hero-title">“いっしょ”が育む<br><span class="highlight">“ひとりでできた！”</span>の芽</h1>
+    <p class="hero-lead">
+      子育て、毎日おつかれさまです。「うちの子、これでいいのかな？」そんな不安も、音楽が笑顔に変えてくれます。
+      親子の”いっしょ”の時間を大切に、お子さまの自立心を育んでいきましょう。
+      はじめのノンセイムは不安でOK——だからこそ“いっしょ”を満たしてから、一歩ずつ。
+    </p>
+    <div class="hero-buttons">
+      <a href="https://lin.ee/xxxxxxxx" target="_blank" rel="noopener" class="btn btn-primary">LINEで体験日をチェック！</a>
+      <a href="#about" class="btn btn-secondary">セイムの法則って？</a>
+    </div>
+    <div class="img-placeholder"><img src="IMAGE/zen015.jpg" alt="画像の説明"></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- === こんなお悩みありませんか？ === -->
+  <section class="section" style="background-color: #fff;">
+    <div class="container">
+      <div class="section-title">
+        <h2>こんなお悩み、ありませんか？</h2>
+        <p>3歳前後のお子さまとの毎日、楽しいけど大変なことも。</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="feature-card card">
+          <div class="feature-icon">🤔</div>
+          <h3>イヤイヤ期、どう接すれば…</h3>
+          <p>何を言っても「イヤ！」。ついこちらもイライラ…。どうすれば気持ちを分かってあげられるんだろう？</p>
+        </div>
+        <div class="feature-card card">
+          <div class="feature-icon">💬</div>
+          <h3>言葉の発達が少し心配…</h3>
+          <p>お友達はたくさんお話するのに、うちはまだ単語だけ。コミュニケーション、ちゃんと取れるようになるかな？</p>
+        </div>
+        <div class="feature-card card">
+          <div class="feature-icon">🤯</div>
+          <h3>有り余るエネルギー、どうしよう！</h3>
+          <p>毎日公園だけじゃ物足りないみたい。お家でできる、夢中になれることって何かないかな？</p>
+        </div>
+        <div class="feature-card card">
+          <div class="feature-icon">💖</div>
+          <h3>「好き」や「得意」を見つけてあげたい</h3>
+          <p>この子の可能性を伸ばしてあげたいけど、何が向いているのかわからない。色々な体験をさせてあげたいな。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === セイムの法則とは？ === -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>そのお悩み、音楽が解決します！<br>キーワードは「セイムの法則」</h2>
+        <p>お子さまの心がぐんぐん育つ、ヤマハ音楽教室が大切にしている考え方です。</p>
+      </div>
+      <div class="content-box" style="text-align: center; max-width: 700px; margin: 0 auto 48px;">
+        <h3>セイムの法則って、なあに？</h3>
+        <p>むずかしく考えなくて大丈夫！<br>
+            カンタンに言うと、<strong style="color:var(--color-primary);">「ママと“いっしょ”だと安心する」</strong>ということ。<br>
+            この「いっしょだね！」という安心感が心の“貯金”になり、新しいことに挑戦する勇気（＝自立心）を育むんです。
+        </p>
+      </div>
+      
+      <div class="section-title" style="margin-bottom:32px;">
+        <h3>“いっしょ”が育つ、3つのステップ</h3>
+      </div>
+      <div class="grid grid-3">
+        <div class="step-card card">
+          <div class="step-icon">🤱</div>
+          <h3><span class="step-num">STEP 1</span>だっこの安心感から<small>身体のセイム</small></h3>
+          <ul>
+            <li>抱っこのリズム</li>
+            <li>呼吸のテンポ</li>
+            <li>肌のぬくもり</li>
+          </ul>
+          <p style="font-size:14px; margin-top:12px;">身体のふれあいは「世界は安全だよ」という最初のメッセージ。これが心の土台になります。</p>
+        </div>
+        <div class="step-card card">
+          <div class="step-icon">😊</div>
+          <h3><span class="step-num">STEP 2</span>ママの笑顔が鏡に<small>心のセイム</small></h3>
+          <ul>
+            <li>目を合わせてニッコリ</li>
+            <li>同じものを見て「わー！」</li>
+            <li>一緒にパチパチ拍手</li>
+          </ul>
+          <p style="font-size:14px; margin-top:12px;">ママの感情を真似することで、自分の気持ちを表現し、相手を理解する「心の鏡」が育ちます。</p>
+        </div>
+        <div class="step-card card">
+          <div class="step-icon">👏</div>
+          <h3><span class="step-num">STEP 3</span>いっしょにできた！<small>行動のセイム</small></h3>
+          <ul>
+            <li>動きをまねしてダンス</li>
+            <li>一緒に歌をうたう</li>
+            <li>タイミングを合わせる</li>
+          </ul>
+          <p style="font-size:14px; margin-top:12px;">「できた！」を共有する体験が自信になり、「ちょっと違うこと」も楽しめる心の余裕が生まれます。</p>
+        </div>
+      </div>
+
+      <div class="alert">
+        <strong>でも、ノンセイム（ちがい）は、最初は“不安”から始まります。</strong><br>
+        はじめての場所や人は、多くの子にとって不安の引き金です。だからこそ、私たちはこの3つのステップを大切に、まず“セイムの貯金”をたっぷり貯めます。安心が満ちると、お子さまの心は自然に<strong>「ちがい＝発見・好奇心」</strong>へと開かれていきます。
+      </div>
+    </div>
+  </section>
+
+  <!-- === 音楽の効果 === -->
+  <section class="section" style="background: linear-gradient(180deg, #FFFFFF 0%, #FFFBF7 100%);">
+    <div class="container">
+      <div class="section-title">
+        <h2>音楽で育む“いっしょ”と“ちがい”の心</h2>
+        <p>言葉がなくても、心と体で繋がれる魔法の時間です。</p>
+      </div>
+      <div class="grid grid-2 align-center">
+        <div class="card">
+          <h3>「ハイタッチ」に隠れた成長</h3>
+          <p>何かができた時のハイタッチ。<strong>ピタッと合う</strong>と、気持ちがいい。笑顔がこぼれる。これが“セイム”の喜びです。</p>
+          <p>やがて子どもは、<strong>あえてタイミングをずらす</strong>ことを覚えます。早く叩いたり、遅らせたり——。そこから「きゃはは！」という笑いが生まれる。これが“ノンセイム（違い）”を楽しむ心の芽生えです。</p>
+          <p style="margin-top:12px">
+            もし最初の「ずれ」を怖がっても大丈夫。いつでも戻れる<strong>“いっしょ”の安全基地</strong>（セイム）を用意し、<strong>「合う→ずれる→また合う」</strong>の短い往復で、不安を好奇心へと橋渡しします。
+          </p>
+        </div>
+        <div class="card">
+          <h3>自立への大切なステップ</h3>
+          <p>多くの親が願う<strong>自立</strong>は、“離れること”ではなく、<strong>ちがいを楽しみ、選び、行動する勇気</strong>です。</p>
+          <p>成長の順番は<strong>安心（セイム）→挑戦（ノンセイム）→自立</strong>。この順序を守ることで、ノンセイムは<strong>不安の刺激</strong>から<strong>探求の刺激</strong>へと意味を変えていきます。</p>
+          <div class="quote-box" style="margin-top:12px;">
+            「いま、うちの子はどの位置？」<br>
+            セイムとノンセイムの地図があれば、今日の関わり方が優しく定まります。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === コース紹介 === -->
+  <section id="program" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>さあ、はじめよう！年齢別コースのご案内</h2>
+        <p>お子さまの「いま」にぴったりのコースをご用意しています。</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card course-card">
+          <p class="course-tag">1〜3歳</p>
+          <h3>ドレミぱーく（月1回45分）</h3>
+          <p>音楽とふれあい、親子の絆を深める時間。レッスンというより、ママと「いっしょ」を楽しむ心の栄養補給です。</p>
+          <div class="img-placeholder-small"><img src="IMAGE/e001.jpg" alt="画像の説明"></div>
+          <ul class="checklist">
+            <li>ベビーカー＆ご兄弟の同伴OK</li>
+            <li>手ぶらで参加OK！持ち物不要</li>
+            <li>泣いても大丈夫。途中入退室もOK</li>
+          </ul>
+          <div class="course-buttons">
+            <a href="https://lin.ee/uVpVQX3" target="_blank" rel="noopener" class="btn btn-primary">LINEで日程を見る</a>
+          </div>
+        </div>
+        <div class="card course-card">
+          <p class="course-tag">3歳〜年少</p>
+          <h3>ヤマハ音楽教室</h3>
+          <p>”いっしょ”の楽しさから、”自分でできた！”の自信へ。聴く力、リズム感、表現力をぐんぐん伸ばします。</p>
+          <div class="img-placeholder-small"><img src="IMAGE/prm-26_dl.jpg" alt="画像の説明"></div>
+          <ul class="checklist">
+            <li>「きく→うたう→ひく」で耳を育てる</li>
+            <li>お友達とのアンサンブルで協調性もUP</li>
+            <li>お家での関わり方も丁寧にサポート</li>
+          </ul>
+          <div class="course-buttons">
+            <a href="https://lin.ee/uVpVQX3" target="_blank" rel="noopener" class="btn btn-primary">無料体験をLINEで相談</a>
+            <a href="tel:0740-22-2063" class="btn btn-tel">電話で相談 (0740-22-2063)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === よくある質問 === -->
+  <section id="faq" class="section" style="background-color: #fff;">
+    <div class="container">
+      <div class="section-title">
+        <h2>よくあるご質問</h2>
+        <p>気になること、なんでも聞いてくださいね。</p>
+      </div>
+      <details open>
+        <summary>まだ1歳ですが、レッスンについていけますか？</summary>
+        <div class="faq-answer">
+          <p>もちろんです！ドレミぱーくは「お勉強」ではありません。ママと一緒に音楽を感じて、体を動かすことが目的なので、月齢を気にせず楽しめます。泣いちゃっても、抱っこしたままでも大丈夫。安心してご参加くださいね。</p>
+        </div>
+      </details>
+      <details>
+        <summary>人見知り・場所見知りをする子ですが大丈夫？</summary>
+        <div class="faq-answer">
+          <p>ご心配いりません。最初はママのお膝の上で聴いているだけでもOK！無理強いはせず、お子さまのペースを大切にします。先生も「少し離れたお友達」として、ゆっくり関係を築いていきますのでご安心ください。</p>
+        </div>
+      </details>
+      <details>
+        <summary>兄弟を連れて行ってもいいですか？</summary>
+        <div class="faq-answer">
+          <p>はい、大歓迎です！ご兄弟も一緒に音楽を楽しんでください。レッスン中の入退室も自由にできますので、授乳やおむつ替えなども気兼ねなくどうぞ。</p>
+        </div>
+      </details>
+      <details>
+        <summary>ノンセイム（違い）って、最初は不安になりませんか？</summary>
+        <div class="faq-answer">
+          <p>はい。はじめは不安が普通です。だからこそ最初に<strong>“セイムの貯金”</strong>を重ねます。<br>
+          レッスンでは、同じ動き・同じリズム・同じ間（ま）を共有し、安心を満たしてから、<br>
+          ほんの少しだけ“ちがい”に触れます。戻れる安全基地があるから、<br>
+          ノンセイムはやがて<strong>「面白い・やってみたい」</strong>に変わっていきます。</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- === アクセス === -->
+  <section id="access" class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>教室へのアクセス</h2>
+        <p>JR和邇駅から徒歩5分！駐車場もございます。</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>トリイミュージック 大津わにセンター</h3>
+          <ul class="access-info">
+            <li><span class="access-info-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.58172 2 4 5.58172 4 10C4 15.5228 12 22 12 22C12 22 20 15.5228 20 10C20 5.58172 16.4183 2 12 2ZM12 12C10.8954 12 10 11.1046 10 10C10 8.89543 10.8954 8 12 8C13.1046 8 14 8.89543 14 10C14 11.1046 13.1046 12 12 12Z"></path></svg></span><div><strong>住所</strong><br>滋賀県大津市和邇中浜418</div></li>
+            <li><span class="access-info-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 10H22V4C22 3.44772 21.5523 3 21 3H3C2.44772 3 2 3.44772 2 4V10H4V5H20V10ZM8 12H5V21H8V12ZM19 12H16V21H19V12ZM13.5 12H10.5V21H13.5V12ZM4 11.25C4 10.8358 4.33579 10.5 4.75 10.5H19.25C19.6642 10.5 20 10.8358 20 11.25V21.25C20 21.6642 19.6642 22 19.25 22H4.75C4.33579 22 4 21.6642 4 21.25V11.25Z"></path></svg></span><div><strong>営業時間</strong><br>平日 10:00–19:00 / 土曜 10:00–18:00</div></li>
+            <li><span class="access-info-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.4116 14.6534C16.4333 14.4024 15.4839 14.2059 14.5513 14.072C14.3323 14.0401 14.102 14.1209 13.9452 14.2835L12.4331 15.7956C10.222 14.6896 8.31037 12.778 7.20438 10.5669L8.71649 9.05478C8.87912 8.89799 8.95988 8.66773 8.92798 8.44874C8.79413 7.51606 8.59762 6.56669 8.34661 5.58842C8.28382 5.34876 8.08381 5.17646 7.83838 5.14506L4.25411 4.71186C4.01252 4.68087 3.77838 4.79308 3.63371 4.98144C3.01529 5.81157 2.85042 7.21803 3.86955 9.9875C5.12373 13.3619 7.82209 16.4429 11.2533 18.232C14.1251 19.7432 15.8277 19.9531 16.8309 19.366C17.0193 19.2214 17.1315 18.9872 17.1005 18.7456L16.6673 15.1614C16.6359 14.9159 16.4636 14.716 16.2239 14.6532L17.4116 14.6534Z"></path></svg></span><div><strong>電話</strong><br><a href="tel:077-000-0000">077-000-0000</a>（教室直通）</div></li>
+          </ul>
+          <div class="img-placeholder-small" style="margin-top:24px; height:100px;"><img src="IMAGE/IMG_2128.JPG" alt="画像の説明"></div>
+        </div>
+        <div class="access-map">
+          <iframe title="トリイミュージック 大津わにセンター 地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=大津市和邇中浜418&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>監修・文責</p>
+    <div class="footer-sign">Ken
+      <small>トリイミュージック 大津わにセンター｜やめないピアノ・エレクトーン楽しい家庭練習</small>
+    </div>
+    <p style="margin-top: 24px; font-size: 12px;">© Torii Music Otsu Wani Center</p>
+  </div>
+</footer>
+
+<!-- === フローティングCTA === -->
+<nav class="sticky-cta" aria-label="固定アクション">
+  <div class="container">
+    <a href="https://lin.ee/uVpVQX3" target="_blank" rel="noopener" class="btn btn-primary">LINEで体験日を見る</a>
+    <a href="tel:0740-22-2063" class="btn btn-tel">電話する</a>
+  </div>
+</nav>
+<div class="float-line-pc">
+  <a href="https://lin.ee/uVpVQX3" target="_blank" rel="noopener" class="btn btn-primary">LINEで体験日をチェック！</a>
+</div>
+
+<!-- === 構造化データ（変更なし） === -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MusicSchool",
+  "name":"トリイミュージック 大津わにセンター",
+  "address":{
+    "@type":"PostalAddress",
+    "addressRegion":"滋賀県",
+    "addressLocality":"大津市",
+    "streetAddress":"和邇中浜418",
+    "postalCode":"520-0524"
+  },
+  "telephone":"+81-740-22-2063",
+  "areaServed":"Shiga",
+  "url":"https://www.toriimusic.co.jp/",
+  "image":["https://www.toriimusic.co.jp/wp-content/uploads/2021/08/course-kids-400x400.png"],
+  "parentOrganization":{"@type":"Organization","name":"株式会社トリイ"},
+  "sameAs":[]
+}
+</script>
+
+</body>
+</html>
